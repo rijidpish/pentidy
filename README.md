@@ -1,4 +1,4 @@
-# pentidy <img src="pentidy.png" width="50">
+# pentidy <img src="pentidy.png" width="25">
 A bash script to setup a consistently organised working directory for notetaking on internal network pentest / CTFs etc.<br>
 It does some basic enumeration using a few tools packaged with kali linux.<br>
 The aim is to make the first stages of an internal pentest as consistant as possible.<br>
