@@ -1339,15 +1339,15 @@ echo $txtblu$txtbld"[%] Scan started on: $txtrst$txtblu$(date)"$txtrst
 $sleeps
 build_env
 pick_lick_roll_flick_tcp
-#pick_lick_roll_flick_udp
-#dns_scan
-#web_scan
-#smb_enum
-#msf_payloads
-#rev_shells
-#msf_import
+pick_lick_roll_flick_udp
+dns_scan
+web_scan
+smb_enum
+msf_payloads
+rev_shells
+msf_import
 hostname_lookup # more reliable with slower nmap scans -T3 and lower
-#report_custom # need a better way of searching and replacing, currently using ~ as a delimeter with sed but have now found it in a scan so it breaks...
+report_custom # need a better way of searching and replacing, currently using ~ as a delimeter with sed but have now found it in a scan so it breaks...
 #screenshot_save # buggy
 duration=$SECONDS # End
 echo $txtblu$txtbld"[%] Scan finished on: $txtrst$txtblu$(date), it took $(($duration / 60)) minutes and $(($duration % 60)) seconds"$txtrst
