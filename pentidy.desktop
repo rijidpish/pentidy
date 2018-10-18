@@ -1,7 +1,10 @@
 [Desktop Entry]
 
-# For gnome... This file can be placed in ~/.local/share/applications/, and the icon needs to be added too
-# You can then find and add the launcher to your favourites bar
+# For gnome... This file can be placed in:
+# ~/.local/share/applications/ or /usr/share/applications/ and also /usr/share/kali-menu/applications/
+# The icon needs to be added to relevant folder also
+# You can then find the launcher in the menu and when searching
+# the launcher can then be added to your favourites bar
 
 Name=PenTidy
 Exec=gnome-terminal -e "bash -c '~/pentidy.sh;$SHELL'"
