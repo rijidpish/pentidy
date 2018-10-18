@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PenTidy
+Exec=gnome-terminal -e "bash -c '/root/pentidy.sh;$SHELL'"
+Path=~/shortcut_scripts
+Icon=/root/Pictures/pentidy.png
+Terminal=true
+Type=Application
+Categories=01 - Information Gathering;12 - Reporting Tools;
+Comment=CLI Automated Enumeration Tool
