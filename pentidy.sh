@@ -62,7 +62,7 @@ unicorn_ports_udp="1-65535" # 1-65535
 #masscan_ports_udp="1-65535" # 1-65535
 #masscan_rate="--rate=1000" # wouldn't advise going any faster than 1000...
 scan_speed="-T5" # only applies to nmap scanning, use: -T0, -T1, -T2, -T3, -T4 or -T5 (Paranoid, Sneaky, Polite, Normal/Default, Aggressive, Insane)
-nmap_oscp_tweak="--min-rtt-timeout 250ms" # OSCP/PWK may need '--min-rtt-timeout 250ms' (if you live in oz, or have dogshit internet connection), leave variable empty if your one of the lucky ones
+#nmap_oscp_tweak="--min-rtt-timeout 250ms" # OSCP/PWK may need '--min-rtt-timeout 250ms' (if you live in oz, or have dogshit internet connection), comment this line out if your one of the lucky ones
 bad_chars="\x00\x0a\x0d" # TODO specify bad chars as an argument (-B?)
 shell_port="6183" # TODO specify port to be used for generated shells and payloads (-P?)
 ip_omit="192.168.5.254" # Used mainly to omit the VMware DHCP server IP when scanning a host-only network range with DHCP enabled (192.168.5.254 in my case) as it takes ages to scan
