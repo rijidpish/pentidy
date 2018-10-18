@@ -1,12 +1,13 @@
 [Desktop Entry]
 
-# For gnome... This file can be placed in ~/.local/share/applications/, and also the icon needs to be added too
+# For gnome... This file can be placed in ~/.local/share/applications/, and the icon needs to be added too
+# You can then find and add the launcher to your favourites bar
 
 Name=PenTidy
-Exec=gnome-terminal -e "bash -c '/root/pentidy.sh;$SHELL'"
+Exec=gnome-terminal -e "bash -c '~/pentidy.sh;$SHELL'"
 Path=~/shortcut_scripts
-Icon=/root/Pictures/pentidy.png
+Icon=~/Pictures/pentidy.png
 Terminal=true
 Type=Application
-Categories=01 - Information Gathering;12 - Reporting Tools;
+Categories=01-info-gathering;12-reporting;
 Comment=CLI Automated Enumeration Tool
