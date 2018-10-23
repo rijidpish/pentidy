@@ -5,6 +5,7 @@
 # The icon needs to be added to relevant folder also
 # You can then find the launcher in the menu and when searching
 # the launcher can then be added to your favourites bar
+# if adding into the kali-menu, you might want to add X-Kali-Package or apt will whinge
 
 Name=PenTidy
 Exec=gnome-terminal -e "bash -c '~/pentidy.sh;$SHELL'"
@@ -14,3 +15,4 @@ Terminal=true
 Type=Application
 Categories=01-info-gathering;12-reporting;
 Comment=CLI Automated Enumeration Tool
+X-Kali-Package=pentidy
