@@ -938,10 +938,10 @@ report_custom() # Download .odt report template from GitHub and update / add rel
 		echo $txtgry" -  Creating directory: $custom_path$client_name/report/"$txtrst
 		$sleeps
 		# download report template from github TODO - add a report template to download and update the links below
-		echo $txtgry" -  Downloading report template from GitHub"$txtgry
-		wget https://github.com/rijidpish/pentidy/blob/master/report-file.odt?raw=true -O $custom_path$client_name/report/report-$client_name.odt &> /dev/null && echo " $txtgrn$txtchk$txtgry  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred$txtcro$txtgry  Unable to download template!"$txtrst
-		# wget http://localhost/secret/report-file.odt -O $custom_path$client_name/report/report-$client_name.odt &> /dev/null && echo " -  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred $txtcro$txtgry  Unable to download template!"$txtrst # Just for local testing
-		# cp ./report-file.odt $custom_path$client_name/report/report-$client_name.odt && echo " -  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred $txtcro$txtgry  Unable to find template locally!"$txtrst
+		#echo $txtgry" -  Downloading report template from GitHub"$txtgry
+		#wget https://github.com/rijidpish/pentidy/blob/master/report-file.odt?raw=true -O $custom_path$client_name/report/report-$client_name.odt &> /dev/null && echo " $txtgrn$txtchk$txtgry  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred$txtcro$txtgry  Unable to download template!"$txtrst
+		#wget http://localhost/secret/report-file.odt -O $custom_path$client_name/report/report-$client_name.odt &> /dev/null && echo " $txtgrn$txtchk$txtgry  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred $txtcro$txtgry  Unable to download template!"$txtrst # Just for local testing
+		cp ./report-file.odt $custom_path$client_name/report/report-$client_name.odt && echo " $txtgrn$txtchk$txtgry  Got: file://$custom_path$client_name/report/report-$client_name.odt" || echo "$txtred $txtcro$txtgry  Unable to find template locally!"$txtrst
 		$sleeps
 		if [ ! -s $custom_path$client_name/report/report-$client_name.odt ]; then
 			echo $txtgry" -  Something went wrong, no report found, skipping..."$txtrst # lies!
